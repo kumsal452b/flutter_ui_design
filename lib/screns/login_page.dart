@@ -11,7 +11,15 @@ class _loginPageState extends State<loginPage> {
     return Container(
       child: Column(
         children: [
-          Contan
+          Container(
+            child: Text("Header"),
+          ),
+          Container(
+            child: Text("Images "),
+          ),
+          Container(
+            child: Text("Button"),
+          )
         ],
       ),
     );

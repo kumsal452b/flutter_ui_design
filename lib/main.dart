@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_ui_design/screns/login_page.dart';
 
 void main() {
   runApp(MyApp());
@@ -10,12 +11,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        body: Center(
-          child: Text("selam"),
-        ),
+      home: Container(
+        child: Text("merhaba"),
       ),
-
     );
   }
 }
