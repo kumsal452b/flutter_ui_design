@@ -22,7 +22,9 @@ class _loginPageState extends State<loginPage> {
                 child: Text("Images "),
               ),
               Container(
-                child: customButton(),
+                child: customButton(tabClic: (){
+                  print('Merhaba hocam');
+                  },),
               )
             ],
           ),

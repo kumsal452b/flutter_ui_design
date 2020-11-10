@@ -2,10 +2,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class customButton extends StatefulWidget {
-  final Function() onClick();
-
-  const customButton({this.})
-
+  final Function tabClic;
+  const customButton({Key key, this.tabClic}) : super(key: key);
   @override
   _customButtonState createState() => _customButtonState();
 }
@@ -14,7 +12,7 @@ class _customButtonState extends State<customButton> {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: ,
+      onTap: widget.tabClic,
       child: Container(
         height: 50,
         decoration: BoxDecoration(
