@@ -18,22 +18,36 @@ class _loginPageState extends State<loginPage> {
             children: [
               Container(
                 child: Column(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: <Widget>[
-                    Text("Learn Free", style: TextStyle(
-                      color: Colors.black,
-                      fontSize:30,
-                      fontWeight: FontWeight.w900,
+                  mainAxisAlignment: MainAxisAlignment.center,
 
-                    ),),
-                    Text("This is system free course")
+                  children: <Widget>[
+                    Container(
+
+                      child: Text("Learn Free", style: TextStyle(
+                        color: Colors.black,
+                        fontSize:30,
+                        fontWeight: FontWeight.w900,
+
+                      ),),
+                    ),
+                    Container(
+                        margin: EdgeInsets.only(
+                          top: 100
+                        ),
+                        child: Text("This is system ffree course",
+                          style: TextStyle(
+                            color: Colors.black,
+                            fontSize:17,
+                            fontWeight: FontWeight.w600,
+
+                          ),))
                   ],
                 ),
               ),
               Container(
-                child: Text("Images "),
+                child:Image.asset("assets/images/exam.png"),
               ),
-              Container(
+                Container(
                 child: customButton(tabClic: (){
                   print('Merhaba hocam');
                   },),
