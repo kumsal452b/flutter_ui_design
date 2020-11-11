@@ -1,4 +1,5 @@
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter_ui_design/widgets/custom_button.dart';
 
 class loginPage extends StatefulWidget {
@@ -16,7 +17,18 @@ class _loginPageState extends State<loginPage> {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Container(
-                child: Text("Header"),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: <Widget>[
+                    Text("Learn Free", style: TextStyle(
+                      color: Colors.black,
+                      fontSize:30,
+                      fontWeight: FontWeight.w900,
+
+                    ),),
+                    Text("This is system free course")
+                  ],
+                ),
               ),
               Container(
                 child: Text("Images "),
